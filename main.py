@@ -54,7 +54,7 @@ def _extract(url: str, audio_only: bool) -> dict[str, Any]:
     fmt = (
         "bestaudio[ext=m4a]/bestaudio/best"
         if audio_only
-        else "best[ext=mp4]/best"
+        else "best"
     )
     options: dict[str, Any] = {
         "quiet": True,
